@@ -15,7 +15,7 @@ function ageCalculate(){
     let currentMonth = today.getMonth()+1
     let currentDate = today.getDate()
 
-    leapChecker(currentYear)
+    // leapChecker(currentYear)
 
     if(
         birthDetails.year > currentYear ||
@@ -23,7 +23,7 @@ function ageCalculate(){
         (birthDetails.date > currentDate && birthDetails.month == currentMonth && birthDetails.year == currentYear)
     ) {
         alert("Not Born Yet")
-        displayResult("-", "-", "-")
+        // displayResult("-", "-", "-")
         return
     }
 
@@ -51,22 +51,33 @@ function ageCalculate(){
         }
     }
 
-    displayResult(birthDate, birthMonth, birthYear)
-}
+    // displayResult(birthDate, birthMonth, birthYear)
 
-function displayResult (birthDate, birthMonth, birthYear) {
-    document.getElementById("years").innerHTML = birthYear
-    document.getElementById("months").innerHTML = birthMonth
-    document.getElementById("days").innerHTML = birthDate
-
+    
     if(birthYear <= 27){
         alert("Huge Congrats! You got the job!")
     }
     else{
         alert("Ooops! You are noteligible for the job!")
     }
-
+     document.getElementById("years").innerHTML = birthYear
+    document.getElementById("months").innerHTML = birthMonth
+    document.getElementById("days").innerHTML = birthDate
 }
+
+// function displayResult (birthDate, birthMonth, birthYear) {
+//     document.getElementById("years").innerHTML = birthYear
+//     document.getElementById("months").innerHTML = birthMonth
+//     document.getElementById("days").innerHTML = birthDate
+
+//     if(birthYear <= 27){
+//         alert("Huge Congrats! You got the job!")
+//     }
+//     else{
+//         alert("Ooops! You are noteligible for the job!")
+//     }
+
+// }
 
 
 // LeapYear Checker
