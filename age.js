@@ -71,16 +71,16 @@ function displayResult (birthDate, birthMonth, birthYear) {
 
 // LeapYear Checker
 
-function leapChecker(year) {
-    if (year % 4 == 0 || (year % 100 == 0 && year %  400 == 0)) {
-        months [1] = 29
-    }
+// function leapChecker(year) {
+//     if (year % 4 == 0 || (year % 100 == 0 && year %  400 == 0)) {
+//         months [1] = 29
+//     }
 
-    else {
-        months[1] = 28
-    }
+//     else {
+//         months[1] = 28
+//     }
 
-    console.log(year,months[1]);
-}
+//     console.log(year,months[1]);
+// }
 
 
